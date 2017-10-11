@@ -2,7 +2,7 @@
 cd ~
 sudo apt-get update
 sudo apt-get install -y git 
-sudo apt-get install -y node 
+sudo apt-get install -y nodejs 
 sudo apt-get install -y nodejs-legacy
 sudo apt-get install -y npm
 rm -rf *

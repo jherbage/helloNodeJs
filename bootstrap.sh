@@ -11,5 +11,5 @@ cd helloNodeJs
 sudo npm install -g http-server
 sudo npm install express os
 mkdir -p public
-nohup node hello.js $1 `curl http://169.254.169.254/latest/meta-data/public-ipv4` &
+nohup node hello.js $1 &
 

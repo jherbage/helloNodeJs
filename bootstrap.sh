@@ -7,5 +7,5 @@ cd helloNodeJs
 sudo npm install -g http-server
 sudo npm install express os
 mkdir -p public
-nohup node hello.js &
+nohup node hello.js $1 &
 

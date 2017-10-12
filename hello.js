@@ -48,14 +48,9 @@ function stress(request,response) {
 var express=require('express');
 var app = express();
 app.get('/', sayHello);
-<<<<<<< HEAD
 app.get('/stress',stress);
 
-
-var server = app.listen(process.argv.length > 2 &&  parseInt(Number(process.argv[2])) == process.argv[2] && parseInt(process.argv[2]) < 65535 && parseInt(process.argv[2]) > 1024 ? parseInt(process.argv[2]) : 3000);
-=======
 var port = process.argv.length > 2 &&  parseInt(Number(process.argv[2])) == process.argv[2] && parseInt(process.argv[2]) < 65535 && parseInt(process.argv[2]) > 1024 ? parseInt(process.argv[2]) : 3000;
 var addr = process.argv.length > 3 ? process.argv[3] : '0.0.0.0'
 var server = app.listen(port, addr);
->>>>>>> 963bbe45a4c6541b020a59f7899514a7c8f3598e
 app.use(express.static('public'));

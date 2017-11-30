@@ -4,6 +4,7 @@ http = require('http');
 http.createServer(function (req, res) { 
   // sending a response header of 200 OK
   res.writeHead(200, {'Content-Type': 'text/plain'}); 
-  // print out Hello World res.end('Hello World V1\n'); 
-  // use port 8080 
+  // print out Hello World 
+  res.end('Hello World V1\n'); 
+  // use port 80
 }).listen(80);
